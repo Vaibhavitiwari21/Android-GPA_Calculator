@@ -1,0 +1,188 @@
+<!--/*
+    This is an XML file for the layout of an Android app. It is using ScrollView to create a scrolling
+    interface for the user. The layout consists of a TextView for the activity title, 5 TextViews for
+    each course, 2 TextViews for the overall GPA, and 5 EditTexts for the input values for each course.
+
+    The layout is using RelativeLayout as its parent layout, and the child layout is a LinearLayout.
+    */-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- ACTIVITY TITLE-->
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px"
+                android:text="GPA Calculator"
+                android:textSize="80px"
+                android:textStyle="bold" />
+
+            <!-- COURSE 1: -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="234px"
+                android:text="COURSE 1: "
+                android:textColor="#373839"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <!-- COURSE 2: -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="384px"
+                android:text="COURSE 2:"
+                android:textColor="#373839"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <!-- COURSE 3: -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="534px"
+                android:text="COURSE 3:"
+                android:textColor="#373839"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <!-- COURSE 4: -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="684px"
+                android:text="COURSE 4:"
+                android:textColor="#373839"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <!-- COURSE 5: -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="834px"
+                android:text="COURSE 5:"
+                android:textColor="#373839"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <!-- OVERALL GPA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="964px"
+                android:text="GPA"
+                android:textColor="#373839"
+                android:textColorHighlight="#B1AFAF"
+                android:textColorLink="#0C0101"
+                android:textSize="55px"
+                android:textStyle="bold" />
+
+            <!-- GPA RESULT -->
+            <TextView
+                android:id="@+id/totalgpa"
+                android:layout_width="440px"
+                android:layout_height="120px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="950px"
+                android:padding="20px"
+                android:textColorLink="#0C0101"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <!-- COURSE 1 INPUT VALUE -->
+            <EditText
+
+                android:id="@+id/courseinput1"
+                android:layout_width="440px"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="92dp"
+                android:layout_marginTop="200px"
+                android:hint="Enter Course1 Grade"
+                android:textSize="45px" />
+
+            <!-- COURSE 2 INPUT VALUE -->
+            <EditText
+                android:id="@+id/courseinput2"
+                android:layout_width="440px"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="97dp"
+                android:layout_marginTop="350px"
+                android:hint="Enter Course2 Grade"
+                android:textSize="45px" />
+
+            <!-- COURSE 3 INPUT VALUE -->
+            <EditText
+                android:id="@+id/courseinput3"
+                android:layout_width="440px"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="102dp"
+                android:layout_marginTop="500px"
+                android:hint="Enter Course3 Grade"
+                android:textSize="45px" />
+
+            <!-- COURSE 4 INPUT VALUE -->
+            <EditText
+                android:id="@+id/courseinput4"
+                android:layout_width="440px"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="107dp"
+                android:layout_marginTop="650px"
+                android:hint="Enter Course4 Grade"
+                android:textSize="45px" />
+
+            <!-- COURSE 5 INPUT VALUE -->
+            <EditText
+                android:id="@+id/courseinput5"
+                android:layout_width="440px"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="112dp"
+                android:layout_marginTop="800px"
+                android:hint="Enter Course5 Grade"
+                android:textSize="45px" />
+
+            <!-- COMPUTE GPA BUTTON -->
+            <Button
+                android:id="@+id/computegpabutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1150px"
+                android:background="#1D80AE"
+                android:padding="25px"
+                android:text="Compute GPA"
+                android:textColor="#F6F6F6"
+                android:textSize="45px"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
